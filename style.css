@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #068D9D;
+}
+
+
+.header{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #53599A;
+    font-weight: bold;
+    font-size: 25px;
+    color: #AEECEF;
+    margin-bottom: 20px;
+    padding: 70px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+
+.header h1{
+    background-color: #53599A;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.game h1, h2{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #AEECEF;
+}
+
+.game .moves{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.game .moves img{
+    width: 200px;
+    height: 200px;
+}
+
+.game .scores{
+    display: flex;
+    justify-content: space-around;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #AEECEF;
+    font-size: 30px;
+    padding-bottom: 20px;
+    
+}
+
+
+.main img{
+    width: 200px;
+    height: 200px;
+    background-color: #6D9DC5;
+    border-radius: 20px;
+}
+
+
+.main button{
+    border: 2px solid #80DED9;
+    background-color: #6D9DC5;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+}
+
+.main button:hover{
+    cursor: pointer; 
+}
+
+.main button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease; /* Gölge efektinin animasyon süresi */
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #53599A;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.footer img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer a{
+    display: inline;
+}

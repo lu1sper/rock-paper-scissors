@@ -1,67 +1,43 @@
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
-    function getComputerChoice(){
-        let x = Math.floor(Math.random() * 3);
-        if (x==0){
-            return "rock";
-        }else if(x===1){
-            return "paper";
-        }else{
-            return "scissors";
-        }
-    }
+</head>
+<body>
+    <div class="header">
+        <h1>ROCK PAPER SCISSORS</h1>
+    </div> 
 
-    function playTheGame(computer, player){
-        player = player.toLowerCase();
-        console.log(player);
-        console.log(computer);
-        if(computer === player){
-            console.log("tie");
-            return 0;
-        }else if(computer == "rock" && player == "paper"){
-            console.log("player wins");
-            return player;
-        }else if(computer == "rock" && player == "scissors"){
-            console.log("computer wins")
-            return computer;
-        }else if(computer == "scissors" && player == "rock"){
-            console.log("player wins");
-            return player;
-        }else if(computer == "scissors" && player == "paper"){
-            console.log("computer wins");
-            return computer;
-        }else if(computer == "paper" && player == "rock"){
-            console.log("computer wins");
-            return computer;
-        }else if(computer == "paper" && player == "scissors"){
-            console.log("player wins");
-            return player;
-        }
-    }
+    <div class="game">
+        <h1>Make your move!</h1>
+        <h2>First to score 5 points wins the game!</h2>
+        <div class="moves">
+            <img src="/images/question-mark.png" alt="">
+            <img src="/images/question-mark.png" alt="">
+        </div>
+        <div class="scores">
+            <p>Player: 0</p>
+            <p>Computer: 0</p>
+        </div>
+    </div>
 
-    function game(){
-        let playerWins = 0;
-        let computerWins = 0;
-        for (let i = 0; i < 5; i++) {
-            let playerChoise = prompt("What's your choise");
-            let result = playTheGame(getComputerChoice(), playerChoise);
-            if (result === 0){
-                i--;
-            }else if(result === "player"){
-                playerWins++;
-            }else{
-                computerWins++;
-            }
-        }
-        if (playerWins > computerWins){
-            console.log("Player wins!");
-        }else{
-            console.log("Computer wins!");
-        }
+    <div class = "main">
+        <button class = "rock"><img src="images/rock.png" alt=""></button>
+        <button class = "paper"><img src="images/paper.png" alt=""></button>
+        <button class = "scissors"><img src="images/scissors.png" alt=""></button>
+    </div>
+
+    <div class="footer">
+        <h3>Copyright © 2023 luisper </h3>
+        
+        
+    </div>
     
-
-    }
     
-    game();
-
-</script>
+</body>
+</html>
