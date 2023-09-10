@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    
 
 </head>
 <body>
@@ -17,13 +17,17 @@
         <h1>Make your move!</h1>
         <h2>First to score 5 points wins the game!</h2>
         <div class="moves">
-            <img src="/images/question-mark.png" alt="">
-            <img src="/images/question-mark.png" alt="">
+            <img id = "player" src ="/images/question-mark.png" alt="">
+            <img id = "computer" src = "/images/question-mark.png" alt="">
         </div>
         <div class="scores">
-            <p>Player: 0</p>
-            <p>Computer: 0</p>
+            <p>Player: <span id = "playerScore">0</span></p>
+            <p>Computer: <span id="computerScore">0</span></p>
         </div>
+    </div>
+
+    <div id="updates">
+
     </div>
 
     <div class = "main">
@@ -33,11 +37,12 @@
     </div>
 
     <div class="footer">
-        <h3>Copyright © 2023 luisper </h3>
-        
-        
+        <ul>
+            <li><h2>Copyright © 2023 luisper</h2></li>
+            <li><a href="https://github.com/lu1sper"><img src="images/github-logo.png" alt=""></a></li>
+        </ul>
     </div>
-    
-    
+
 </body>
+<script src="script.js"></script>
 </html>

@@ -59,6 +59,26 @@ html{
     
 }
 
+#updates{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #AEECEF;
+    font-weight: bold;
+}
+
+#updates h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #AEECEF;
+    font-weight: bold;
+}
+
+
+
 
 .main img{
     width: 200px;
@@ -100,6 +120,8 @@ html{
     height: 30px;
 }
 
-.footer a{
-    display: inline;
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
