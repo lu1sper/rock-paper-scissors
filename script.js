@@ -66,7 +66,7 @@ function game(playerChoise){
         updates.innerHTML = '';
         updates.appendChild(computerWinUpdate);
     }else{
-        updates.innerHTML = ' ';
+        updates.innerHTML = '';
         updates.appendChild(tieUpdate);
     }
     if (playerWins === 5){
