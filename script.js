@@ -40,6 +40,8 @@ function game(playerChoise){
     playerWinUpdate.textContent = "Player wins this round!";
     const computerWinUpdate = document.createElement('h3');
     computerWinUpdate.textContent = "Computer wins this round!";
+    const tieUpdate = document.createElement('h3');
+    tieUpdate.textContent = "It's a tie!";
 
     if(computersChoice === "rock"){
         computerImgElement.src = sourceOfRock;
@@ -63,6 +65,9 @@ function game(playerChoise){
         computerScoreElement.textContent = computerWins;
         updates.innerHTML = '';
         updates.appendChild(computerWinUpdate);
+    }else{
+        updates.innerHTML = ' ';
+        updates.appendChild(tieUpdate);
     }
     if (playerWins === 5){
         playerScoreElement.textContent = playerWins;
